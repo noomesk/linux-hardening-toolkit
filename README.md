@@ -130,7 +130,7 @@ Este proyecto es de código abierto para fines educativos.
 
 ## 👨‍💻 Autor
 
-Desarrollado por MiniMax Agent
+Desarrollado por noomesk
 
 ## 🤝 Contribuciones
 
