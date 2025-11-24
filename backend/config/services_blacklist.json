@@ -1,0 +1,64 @@
+{
+  "dangerous_services": [
+    {
+      "name": "telnet",
+      "risk": "HIGH",
+      "reason": "Transmite datos sin cifrar, incluidas contraseñas",
+      "alternative": "SSH"
+    },
+    {
+      "name": "rsh",
+      "risk": "HIGH",
+      "reason": "Shell remoto sin autenticación segura",
+      "alternative": "SSH"
+    },
+    {
+      "name": "rlogin",
+      "risk": "HIGH",
+      "reason": "Login remoto sin cifrado",
+      "alternative": "SSH"
+    },
+    {
+      "name": "rexec",
+      "risk": "HIGH",
+      "reason": "Ejecución remota sin seguridad",
+      "alternative": "SSH"
+    },
+    {
+      "name": "ftp",
+      "risk": "MEDIUM",
+      "reason": "Transmite credenciales en texto plano",
+      "alternative": "SFTP/FTPS"
+    },
+    {
+      "name": "tftp",
+      "risk": "HIGH",
+      "reason": "Sin autenticación, muy inseguro",
+      "alternative": "SCP/SFTP"
+    },
+    {
+      "name": "vsftpd",
+      "risk": "MEDIUM",
+      "reason": "FTP server, considere SFTP",
+      "alternative": "SFTP"
+    },
+    {
+      "name": "ypserv",
+      "risk": "MEDIUM",
+      "reason": "NIS sin seguridad adecuada",
+      "alternative": "LDAP/Kerberos"
+    },
+    {
+      "name": "telnet-server",
+      "risk": "HIGH",
+      "reason": "Servidor telnet sin cifrado",
+      "alternative": "SSH"
+    },
+    {
+      "name": "rsh-server",
+      "risk": "HIGH",
+      "reason": "Servidor RSH inseguro",
+      "alternative": "SSH"
+    }
+  ]
+}

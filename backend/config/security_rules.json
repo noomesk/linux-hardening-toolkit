@@ -1,0 +1,97 @@
+{
+  "security_checks": [
+    {
+      "id": "001",
+      "name": "Usuario root sin login",
+      "category": "authentication",
+      "severity": "HIGH",
+      "command": "passwd -S root",
+      "expected_pattern": "L",
+      "description": "Verificar que la cuenta root esté bloqueada"
+    },
+    {
+      "id": "002",
+      "name": "SSH Protocol v2",
+      "category": "ssh",
+      "severity": "HIGH",
+      "file": "/etc/ssh/sshd_config",
+      "pattern": "^Protocol 2",
+      "description": "SSH debe usar solo protocolo v2"
+    },
+    {
+      "id": "003",
+      "name": "Login root via SSH deshabilitado",
+      "category": "ssh",
+      "severity": "CRITICAL",
+      "file": "/etc/ssh/sshd_config",
+      "pattern": "^PermitRootLogin no",
+      "description": "SSH no debe permitir login directo como root"
+    },
+    {
+      "id": "004",
+      "name": "Firewall activo",
+      "category": "firewall",
+      "severity": "CRITICAL",
+      "command": "ufw status",
+      "expected_pattern": "active",
+      "description": "UFW debe estar activo"
+    },
+    {
+      "id": "005",
+      "name": "SELinux activo",
+      "category": "selinux",
+      "severity": "MEDIUM",
+      "command": "getenforce",
+      "expected_pattern": "Enforcing",
+      "optional": true,
+      "description": "SELinux debe estar en modo enforcing (si está disponible)"
+    },
+    {
+      "id": "006",
+      "name": "AppArmor activo",
+      "category": "apparmor",
+      "severity": "MEDIUM",
+      "command": "aa-status",
+      "expected_pattern": "apparmor module is loaded",
+      "optional": true,
+      "description": "AppArmor debe estar cargado (si está disponible)"
+    },
+    {
+      "id": "007",
+      "name": "Actualizaciones automáticas",
+      "category": "updates",
+      "severity": "HIGH",
+      "file": "/etc/apt/apt.conf.d/50unattended-upgrades",
+      "pattern": "Unattended-Upgrade::Automatic-Reboot",
+      "optional": true,
+      "description": "Actualizaciones automáticas de seguridad configuradas"
+    },
+    {
+      "id": "008",
+      "name": "Password aging configurado",
+      "category": "authentication",
+      "severity": "MEDIUM",
+      "file": "/etc/login.defs",
+      "pattern": "^PASS_MAX_DAYS",
+      "description": "Tiempo máximo de validez de contraseña configurado"
+    },
+    {
+      "id": "009",
+      "name": "Permisos /etc/passwd",
+      "category": "permissions",
+      "severity": "HIGH",
+      "command": "stat -c %a /etc/passwd",
+      "expected_pattern": "644",
+      "description": "/etc/passwd debe tener permisos 644"
+    },
+    {
+      "id": "010",
+      "name": "Permisos /etc/shadow",
+      "category": "permissions",
+      "severity": "CRITICAL",
+      "command": "stat -c %a /etc/shadow",
+      "expected_pattern": "640|600",
+      "description": "/etc/shadow debe tener permisos restrictivos"
+    }
+  ]
+}

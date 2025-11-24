@@ -1,0 +1,134 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-cyber-darker text-white font-mono;
+    background-image: 
+      linear-gradient(rgba(0, 240, 255, 0.03) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(0, 240, 255, 0.03) 1px, transparent 1px);
+    background-size: 50px 50px;
+  }
+}
+
+@layer components {
+  .cyber-card {
+    @apply bg-cyber-dark border-2 border-neon-blue/30 rounded-lg p-6 
+           hover:border-neon-blue/60 transition-all duration-300 
+           shadow-lg hover:shadow-neon-blue/20;
+  }
+
+  .cyber-button {
+    @apply bg-cyber-dark border-2 border-neon-green text-neon-green
+           px-6 py-3 rounded font-bold uppercase tracking-wider
+           hover:bg-neon-green hover:text-cyber-dark
+           transition-all duration-300 cursor-pointer
+           shadow-lg hover:shadow-neon-green/50;
+  }
+
+  .cyber-button-pink {
+    @apply bg-cyber-dark border-2 border-neon-pink text-neon-pink
+           px-6 py-3 rounded font-bold uppercase tracking-wider
+           hover:bg-neon-pink hover:text-cyber-dark
+           transition-all duration-300 cursor-pointer
+           shadow-lg hover:shadow-neon-pink/50;
+  }
+
+  .cyber-button-blue {
+    @apply bg-cyber-dark border-2 border-neon-blue text-neon-blue
+           px-6 py-3 rounded font-bold uppercase tracking-wider
+           hover:bg-neon-blue hover:text-cyber-dark
+           transition-all duration-300 cursor-pointer
+           shadow-lg hover:shadow-neon-blue/50;
+  }
+
+  .cyber-input {
+    @apply bg-cyber-dark border-2 border-neon-blue/50 text-white
+           px-4 py-2 rounded focus:outline-none focus:border-neon-blue
+           transition-all duration-300;
+  }
+
+  .neon-text {
+    @apply text-transparent bg-clip-text bg-gradient-to-r 
+           from-neon-pink via-neon-purple to-neon-blue;
+  }
+
+  .terminal {
+    @apply bg-black/80 border border-neon-green/50 rounded p-4
+           font-mono text-sm text-neon-green overflow-auto max-h-96;
+  }
+
+  .risk-critical {
+    @apply text-red-500 font-bold;
+  }
+
+  .risk-high {
+    @apply text-orange-500 font-bold;
+  }
+
+  .risk-medium {
+    @apply text-yellow-500 font-bold;
+  }
+
+  .risk-low {
+    @apply text-green-500 font-bold;
+  }
+
+  .status-pass {
+    @apply text-green-400;
+  }
+
+  .status-fail {
+    @apply text-red-400;
+  }
+
+  .status-error {
+    @apply text-yellow-400;
+  }
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0A0E27;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #00F0FF, #BF40BF);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #39FF14, #FF10F0);
+}
+
+/* Glitch effect */
+@keyframes glitch {
+  0% {
+    transform: translate(0);
+  }
+  20% {
+    transform: translate(-2px, 2px);
+  }
+  40% {
+    transform: translate(-2px, -2px);
+  }
+  60% {
+    transform: translate(2px, 2px);
+  }
+  80% {
+    transform: translate(2px, -2px);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+
+.glitch {
+  animation: glitch 0.3s infinite;
+}

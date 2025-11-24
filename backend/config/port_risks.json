@@ -1,0 +1,84 @@
+{
+  "port_risks": {
+    "21": {
+      "service": "FTP",
+      "risk": "HIGH",
+      "description": "FTP transmite credenciales sin cifrar"
+    },
+    "22": {
+      "service": "SSH",
+      "risk": "LOW",
+      "description": "SSH es seguro, pero configure rate limiting"
+    },
+    "23": {
+      "service": "Telnet",
+      "risk": "CRITICAL",
+      "description": "Telnet es completamente inseguro, usar SSH"
+    },
+    "25": {
+      "service": "SMTP",
+      "risk": "MEDIUM",
+      "description": "Servidor de correo, asegurar contra relay abierto"
+    },
+    "80": {
+      "service": "HTTP",
+      "risk": "MEDIUM",
+      "description": "Tráfico web sin cifrar, considere HTTPS"
+    },
+    "443": {
+      "service": "HTTPS",
+      "risk": "LOW",
+      "description": "Tráfico web cifrado"
+    },
+    "445": {
+      "service": "SMB",
+      "risk": "HIGH",
+      "description": "SMB vulnerable a múltiples exploits"
+    },
+    "3306": {
+      "service": "MySQL",
+      "risk": "HIGH",
+      "description": "Base de datos expuesta, solo acceso local"
+    },
+    "3389": {
+      "service": "RDP",
+      "risk": "HIGH",
+      "description": "RDP vulnerable a ataques de fuerza bruta"
+    },
+    "5432": {
+      "service": "PostgreSQL",
+      "risk": "HIGH",
+      "description": "Base de datos expuesta, solo acceso local"
+    },
+    "6379": {
+      "service": "Redis",
+      "risk": "HIGH",
+      "description": "Redis sin autenticación por defecto"
+    },
+    "27017": {
+      "service": "MongoDB",
+      "risk": "HIGH",
+      "description": "MongoDB sin autenticación por defecto"
+    }
+  },
+  "common_services": {
+    "20": "FTP-DATA",
+    "21": "FTP",
+    "22": "SSH",
+    "23": "Telnet",
+    "25": "SMTP",
+    "53": "DNS",
+    "80": "HTTP",
+    "110": "POP3",
+    "143": "IMAP",
+    "443": "HTTPS",
+    "445": "SMB",
+    "3306": "MySQL",
+    "3389": "RDP",
+    "5432": "PostgreSQL",
+    "5900": "VNC",
+    "6379": "Redis",
+    "8080": "HTTP-Proxy",
+    "27017": "MongoDB"
+  }
+}
