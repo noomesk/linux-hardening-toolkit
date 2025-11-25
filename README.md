@@ -66,7 +66,7 @@ npm run dev
 
 Acceder a: http://localhost:3000
 
-## 📚 API Endpoints
+## API Endpoints
 
 ### Escaneo de Puertos
 - `POST /api/scan-ports` - Escanear puertos
@@ -125,22 +125,29 @@ Acceder a: http://localhost:3000
 
 ##  ¿Cómo lo ejecuto en mi máquina???
 
-🐧 Linux (3 pasos):
+### 🐧 En Linux (3 pasos)
+
+```bashcd backend
 bash
 cd backend && python3 -m venv venv && source venv/bin/activate && pip install -r requirements.txt
 cd ../frontend && npm install
-# Luego ejecutar en 2 terminales
+```
 
-- MacOS (3 pasos):
-bash
+Luego ejecutar en 2 terminales: una para front y otra para back
+
+### MacOS (3 pasos)
+
+```bash
 cd backend && python3 -m venv venv && source venv/bin/activate && pip install -r requirements.txt
 cd ../frontend && npm install
+```
 
-- Windows (3 pasos):
+### Windows (3 pasos):
+```bash
 cmd
 cd backend && python -m venv venv && venv\Scripts\activate && pip install -r requirements.txt
 cd frontend && npm install
-
+```
 ##  Licencia
 
 Este proyecto es de código abierto para fines educativos :3
