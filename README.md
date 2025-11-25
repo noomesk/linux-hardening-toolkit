@@ -123,6 +123,24 @@ Acceder a: http://localhost:3000
 - Probar en entorno de desarrollo antes de producción
 - Algunas acciones pueden interrumpir servicios
 
+##  ¿Cómo lo ejecuto en mi máquina???
+
+🐧 Linux (3 pasos):
+bash
+cd backend && python3 -m venv venv && source venv/bin/activate && pip install -r requirements.txt
+cd ../frontend && npm install
+# Luego ejecutar en 2 terminales
+
+- MacOS (3 pasos):
+bash
+cd backend && python3 -m venv venv && source venv/bin/activate && pip install -r requirements.txt
+cd ../frontend && npm install
+
+- Windows (3 pasos):
+cmd
+cd backend && python -m venv venv && venv\Scripts\activate && pip install -r requirements.txt
+cd frontend && npm install
+
 ##  Licencia
 
 Este proyecto es de código abierto para fines educativos :3
