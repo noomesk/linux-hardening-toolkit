@@ -2,9 +2,9 @@
 
 ## 📋 Descripción
 
-Linux Hardening Toolkit es una suite completa de herramientas de seguridad para sistemas Linux con una interfaz web moderna y cyberpunk. Automatiza análisis de seguridad, configuración de firewall, gestión de servicios y más.
+Linux Hardening Toolkit es una suite completa de herramientas de seguridad para sistemas Linux con una interfaz web moderna y responsive. Esta herramienta automatiza análisis de seguridad, configuración de firewall, gestión de servicios y más...
 
-## 🎯 Características
+## Características:
 
 ### Backend (FastAPI + Python)
 - **Escaneo de Puertos**: Detecta puertos abiertos y evalúa riesgos
@@ -15,19 +15,19 @@ Linux Hardening Toolkit es una suite completa de herramientas de seguridad para 
 - **Checklist de Seguridad**: Ejecuta verificaciones completas según mejores prácticas
 
 ### Frontend (Next.js + TypeScript + Tailwind CSS)
-- Interfaz moderna con diseño cyberpunk
+- Interfaz moderna 
 - Animaciones fluidas
 - Dashboard interactivo
 - Visualización de datos en tiempo real
-- Tema oscuro con efectos neón
+- Tema oscuro con efectos neón :)
 
-## 🚀 Instalación
+## Instalación
 
 ### Requisitos Previos
-- Python 3.8+
+- Python 3.8+ (Funciona mejor con Python 3.11.9 porque puede haber errores de incompatibilidad de versiones con Python 3.14 dado que en las dependencias del backend necesitas instalar pydantic y (pydantic==2.5.0) fue creada antes de que Python 3.14 existiera y no sabe cómo funcionar con ella, entonces por eso recomiendo la versión de Python 3.11.9 o 3.12 ya que estas versiones son estables y compatibles con la mayoría de las librerías) jeje ya lo probé. 
 - Node.js 18+
 - npm o yarn
-- Permisos de superusuario para algunas operaciones
+- Permisos de superusuario para algunas operaciones (Linux o en su defecto WSL2 en Windows, usar Docker o correrlo desde Máquina Virtual con Linux, para funcionalidad real)
 
 ### Backend
 
@@ -47,8 +47,7 @@ npm install
 
 ### Iniciar Backend (Puerto 8000)
 
-```bash
-cd backend
+```bashcd backend
 python main.py
 ```
 
@@ -100,7 +99,7 @@ Acceder a: http://localhost:3000
 ### Reporte
 - `GET /api/report/full` - Generar reporte completo
 
-## 🎨 Stack Tecnológico
+##  STAAAAAAAAAAAAAAAAAAAACK TECNOLÓGICO USADO: 
 
 ### Backend
 - FastAPI
@@ -124,14 +123,15 @@ Acceder a: http://localhost:3000
 - Probar en entorno de desarrollo antes de producción
 - Algunas acciones pueden interrumpir servicios
 
-## 📝 Licencia
+##  Licencia
 
-Este proyecto es de código abierto para fines educativos.
+Este proyecto es de código abierto para fines educativos :3
 
-## 👨‍💻 Autor
+##  Autor
 
 Desarrollado por noomesk
 
-## 🤝 Contribuciones
+##  Contribuciones
 
-Las contribuciones son bienvenidas. Por favor, abre un issue o pull request.
+
+Las contribuciones son bienvenidas. Por favor, abre un issue o pull request, o siéntete libre de enviar un mensaje en mi portafolio https://noomesk.vercel.app/ sección >> contacto. 
