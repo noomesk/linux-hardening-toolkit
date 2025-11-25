@@ -1,6 +1,6 @@
 # Linux Hardening Toolkit 🛡️
 
-## 📋 Descripción
+## Descripción
 
 Linux Hardening Toolkit es una suite completa de herramientas de seguridad para sistemas Linux con una interfaz web moderna y responsive. Esta herramienta automatiza análisis de seguridad, configuración de firewall, gestión de servicios y más...
 
@@ -24,7 +24,7 @@ Linux Hardening Toolkit es una suite completa de herramientas de seguridad para 
 ## Instalación
 
 ### Requisitos Previos
-- Python 3.8+ (Funciona mejor con Python 3.11.9 porque puede haber errores de incompatibilidad de versiones con Python 3.14 dado que en las dependencias del backend necesitas instalar pydantic y (pydantic==2.5.0) fue creada antes de que Python 3.14 existiera y no sabe cómo funcionar con ella, entonces por eso recomiendo la versión de Python 3.11.9 o 3.12 ya que estas versiones son estables y compatibles con la mayoría de las librerías) jeje ya lo probé. 
+- Python 3.8+ (CONSEJO: Funciona mejor con Python 3.11.9 porque puede haber errores de incompatibilidad de versiones con Python 3.14 esto lo digo porque en las dependencias del backend necesitas instalar pydantic y pydantic==2.5.0 (que es la versión que se usa aqui) fue creada antes de que Python 3.14 existiera y pues si usas esa versión, python no sabe cómo funcionar con ella, así que por eso recomiendo la versión de Python 3.11.9 o 3.12 ya que estas versiones son más estables y compatibles con la mayoría de las librerías) jeje ya lo probé. Saludos.
 - Node.js 18+
 - npm o yarn
 - Permisos de superusuario para algunas operaciones (Linux o en su defecto WSL2 en Windows, usar Docker o correrlo desde Máquina Virtual con Linux, para funcionalidad real)
