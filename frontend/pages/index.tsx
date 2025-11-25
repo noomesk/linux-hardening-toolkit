@@ -196,7 +196,7 @@ export default function Home() {
               Desarrollado para fortalecer la seguridad de sistemas Linux
             </p>
             <p className="text-neon-blue text-xs mt-2">
-              © 2024 Linux Hardening Toolkit - MiniMax Agent
+              © 2024 Linux Hardening Toolkit - noomesk - Todos los derechos reservados. 
             </p>
           </div>
         </div>
