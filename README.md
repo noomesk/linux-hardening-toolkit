@@ -99,7 +99,7 @@ Acceder a: http://localhost:3000
 ### Reporte
 - `GET /api/report/full` - Generar reporte completo
 
-##  STAAAAAAAAAAAAAAAAAAAACK TECNOLÓGICO USADO: 
+##  STAAAAAAAAAAAAAAAAAAAACK TECNOLÓGICO: 
 
 ### Backend
 - FastAPI
