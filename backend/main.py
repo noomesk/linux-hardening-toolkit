@@ -1,3 +1,5 @@
+# Importa 'os' para manejar variables de entorno
+import os
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
@@ -17,14 +19,20 @@ app = FastAPI(
     version="1.0.0"
 )
 
-# Configurar CORS
+# --- CAMBIO CLAVE PARA PRODUCCIÓN ---
+# Lee la URL del frontend desde las variables de entorno de Render.
+# Si no existe (en desarrollo local), usa 'http://localhost:3000' por defecto.
+frontend_url = os.getenv("FRONTEND_URL", "http://localhost:3000")
+
+# Configurar CORS con la URL dinámica
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000", "http://127.0.0.1:3000"],
+    allow_origins=[frontend_url], 
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
+# --- FIN DEL CAMBIO ---
 
 # Modelos Pydantic
 class PortScanRequest(BaseModel):
@@ -333,6 +341,7 @@ async def generate_full_report():
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
 
-
+# Este bloque se ejecuta solo cuando corres el archivo directamente con 'python main.py'
+# Render lo ignora, ya que usa su propio comando de inicio.
 if __name__ == "__main__":
     uvicorn.run(app, host="0.0.0.0", port=8000)
