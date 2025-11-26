@@ -1,55 +1,53 @@
-# 🎊 ENTREGA FINAL: Linux Hardening Toolkit
+# ENTREGA FINAL: Linux Hardening Toolkit
 
-## 🎉 ¡PROYECTO COMPLETADO EXITOSAMENTE!
-
-El **Linux Hardening Toolkit** ha sido desarrollado completamente, debuggeado y está **100% FUNCIONAL**.
+El **Linux Hardening Toolkit** ha sido desarrollado completamente, debuggeado y está **100% FUNCIONAL** jeje.
 
 ---
 
-## 🚀 ACCESO INMEDIATO
+## ACCESO INMEDIATO
 
-### 🌐 Interfaz Web
+### Interfaz Web
 Abre tu navegador en:
 ```
 http://localhost:3000
 ```
 
-### 📡 API Backend
+### API Backend
 ```
 http://localhost:8000
 ```
 
-### 📚 Documentación API Interactiva
+### Documentación API Interactiva
 ```
 http://localhost:8000/docs
 ```
 
 ---
 
-## ✅ ESTADO ACTUAL
+##  ESTADO ACTUAL
 
 ```
-✅ Backend corriendo en puerto 8000
-✅ Frontend corriendo en puerto 3000  
-✅ Todos los endpoints funcionando
-✅ Interfaz web cargando correctamente
-✅ Diseño cyberpunk aplicado
-✅ 7 módulos de seguridad operativos
-✅ Comunicación frontend-backend exitosa
+- Backend corriendo en puerto 8000
+- Frontend corriendo en puerto 3000  
+- Todos los endpoints funcionando
+- Interfaz web cargando correctamente
+- Diseño cyberpunk aplicado
+- 7 módulos de seguridad operativos
+- Comunicación frontend-backend exitosa
 ```
 
 ---
 
-## 📋 LO QUE SE CREÓ
+## ARQUITECTURA DEL PROYECTO:
 
 ### Backend (FastAPI + Python)
 **6 Módulos de Seguridad:**
-1. ✅ Port Scanner - Escaneo de puertos con evaluación de riesgo
-2. ✅ Permission Check - Detección SUID/SGID y permisos peligrosos
-3. ✅ Service Manager - Gestión de servicios inseguros
-4. ✅ Firewall Setup - Configuración automática de UFW
-5. ✅ Log Analyzer - Análisis de logs y detección de fuerza bruta
-6. ✅ Security Checklist - Verificaciones automáticas con puntuación
+1. - Port Scanner - Escaneo de puertos con evaluación de riesgo
+2. - Permission Check - Detección SUID/SGID y permisos peligrosos
+3. - Service Manager - Gestión de servicios inseguros
+4. - Firewall Setup - Configuración automática de UFW
+5. - Log Analyzer - Análisis de logs y detección de fuerza bruta
+6. - Security Checklist - Verificaciones automáticas con puntuación
 
 **Configuraciones:**
 - `services_blacklist.json` - Lista de servicios peligrosos
@@ -58,24 +56,24 @@ http://localhost:8000/docs
 
 ### Frontend (Next.js + TypeScript + Tailwind)
 **7 Componentes React:**
-1. ✅ PortScanner.tsx - Interfaz de escaneo de puertos
-2. ✅ PermissionCheck.tsx - Verificación de permisos
-3. ✅ ServiceManager.tsx - Gestión de servicios
-4. ✅ FirewallConfig.tsx - Configuración de firewall
-5. ✅ LogAnalyzer.tsx - Análisis de logs
-6. ✅ SecurityChecklist.tsx - Checklist interactivo
-7. ✅ FullReport.tsx - Reporte completo del sistema
+1. PortScanner.tsx - Interfaz de escaneo de puertos
+2. PermissionCheck.tsx - Verificación de permisos
+3. ServiceManager.tsx - Gestión de servicios
+4. FirewallConfig.tsx - Configuración de firewall
+5. LogAnalyzer.tsx - Análisis de logs
+6. SecurityChecklist.tsx - Checklist interactivo
+7. FullReport.tsx - Reporte completo del sistema
 
 **Diseño:**
-- ✨ Tema cyberpunk con efectos neón
-- 🎨 Paleta de colores: Rosa (#FF10F0), Azul (#00F0FF), Verde (#39FF14), Púrpura (#BF40BF)
-- 📱 Responsive (funciona en desktop y móvil)
-- 🎭 Animaciones fluidas con GSAP
-- 🌙 Fondo oscuro con grid pattern
+- Tema cyberpunk con efectos neón
+- Paleta de colores: Rosa (#FF10F0), Azul (#00F0FF), Verde (#39FF14), Púrpura (#BF40BF)
+- Responsive (funciona en desktop y móvil)
+- Animaciones fluidas con GSAP
+- Fondo oscuro con grid pattern
 
 ---
 
-## 📁 ARCHIVOS PRINCIPALES
+## ARCHIVOS PRINCIPALES
 
 **Lee estos archivos para más información:**
 
@@ -99,7 +97,7 @@ linux_hardening_toolkit/
 
 ---
 
-## 🎯 CÓMO USAR
+## CÓMO USAR
 
 ### Opción 1: Usar la interfaz web
 1. Abre http://localhost:3000 en tu navegador
@@ -132,7 +130,7 @@ curl http://localhost:8000/api/report/full
 
 ---
 
-## 🔄 REINICIAR SERVICIOS
+##  REINICIAR SERVICIOS
 
 Si necesitas reiniciar los servicios:
 
@@ -154,24 +152,24 @@ HOME=/tmp npm run dev
 
 ---
 
-## 🎨 CAPTURAS DE FUNCIONALIDAD
+##  CAPTURAS DE FUNCIONALIDAD
 
 ### Dashboard Principal
-- ✅ 7 tarjetas modulares con iconos
-- ✅ Indicador de estado de API (online/offline)
-- ✅ Diseño cyberpunk con efectos neón
-- ✅ Responsive grid layout
+-  7 tarjetas modulares con iconos
+-  Indicador de estado de API (online/offline)
+-  Diseño cyberpunk con efectos neón
+-  Responsive grid layout
 
 ### Módulos Individuales
-- ✅ Botones de acción con estilo cyberpunk
-- ✅ Tablas de resultados con colores por riesgo
-- ✅ Gráficos de resumen estadístico
-- ✅ Recomendaciones de seguridad
-- ✅ Loading states con spinners animados
+-  Botones de acción con estilo cyberpunk
+-  Tablas de resultados con colores por riesgo
+-  Gráficos de resumen estadístico
+-  Recomendaciones de seguridad
+-  Loading states con spinners animados
 
 ---
 
-## 🛠️ TECNOLOGÍAS USADAS
+## TECNOLOGÍAS USADAS
 
 **Backend:**
 - Python 3.x
@@ -193,7 +191,7 @@ HOME=/tmp npm run dev
 
 ---
 
-## 📊 FUNCIONALIDADES IMPLEMENTADAS
+##  FUNCIONALIDADES IMPLEMENTADAS
 
 ### Escaneo de Puertos
 - Escaneo de puertos comunes (21, 22, 23, 25, 80, 443, etc.)
@@ -253,7 +251,7 @@ HOME=/tmp npm run dev
 
 ---
 
-## ⚠️ NOTAS IMPORTANTES
+##  NOTAS IMPORTANTES
 
 ### Entorno Sandbox
 Este proyecto está corriendo en un **entorno sandbox** de Linux. Por lo tanto:
@@ -267,28 +265,28 @@ Este proyecto está corriendo en un **entorno sandbox** de Linux. Por lo tanto:
 
 ### Funcionamiento Verificado
 A pesar de las limitaciones del sandbox, el código está **100% funcional**:
-- ✅ Todos los endpoints responden correctamente
-- ✅ La interfaz web carga sin errores
-- ✅ Los módulos manejan errores apropiadamente
-- ✅ Las recomendaciones se generan correctamente
+-  Todos los endpoints responden correctamente
+-  La interfaz web carga sin errores
+-  Los módulos manejan errores apropiadamente
+-  Las recomendaciones se generan correctamente
 
 ---
 
-## 🎓 APRENDIZAJES DEL PROYECTO
+##  APRENDIZAJES DEL PROYECTO FINAL
 
-Este proyecto demuestra:
-1. ✅ Integración completa Backend-Frontend
-2. ✅ API RESTful con FastAPI
-3. ✅ Frontend moderno con Next.js y TypeScript
-4. ✅ Diseño profesional con Tailwind CSS
-5. ✅ Manejo de errores robusto
-6. ✅ Arquitectura modular y escalable
-7. ✅ Código limpio y documentado
-8. ✅ Debugging y resolución de problemas
+
+1.  Integración completa Backend-Frontend
+2.  API RESTful con FastAPI
+3.  Frontend moderno con Next.js y TypeScript
+4.  Diseño profesional con Tailwind CSS
+5.  Manejo de errores robusto
+6.  Arquitectura modular y escalable
+7.  Código limpio y documentado
+8.  Debugging y resolución de problemas
 
 ---
 
-## 🎯 USO RECOMENDADO
+## USO RECOMENDADO
 
 ### Para Desarrollo
 ```bash
@@ -315,7 +313,7 @@ npm run start
 
 ---
 
-## 📞 SOPORTE
+## SOPORTE
 
 Si encuentras problemas:
 
@@ -335,9 +333,7 @@ Si encuentras problemas:
 
 ---
 
-## 🏆 PROYECTO ENTREGADO
-
-### ✅ COMPLETADO
+### CHECKLIST DEL PROY COMPLETADO
 - [x] Backend FastAPI con 6 módulos
 - [x] Frontend Next.js con 7 componentes
 - [x] Diseño cyberpunk moderno
@@ -348,27 +344,15 @@ Si encuentras problemas:
 - [x] Testing y debugging
 - [x] Funcionando en localhost
 
-### 📦 ARCHIVOS ENTREGADOS
-- 30+ archivos de código
-- 3 archivos de configuración JSON
-- 3 archivos de documentación (.md)
-- Scripts de inicio
-- Configuraciones de proyecto
+---
+
+El **Linux Hardening Toolkit** está listoOOOOOOOOOOOOOOOOOOOO Amiwos q emoción.
 
 ---
 
-## 🎉 ¡GRACIAS!
-
-El **Linux Hardening Toolkit** está listo para usar.
-
-**Disfruta de tu nueva herramienta de seguridad!** 🛡️🔒🚀
-
----
-
-**Desarrollado por:** MiniMax Agent  
+**Desarrollado por:** noomesk https://noomesk.vercel.app/
 **Proyecto:** Linux Hardening Toolkit  
 **Versión:** 1.0.0  
 **Stack:** FastAPI + Next.js + TypeScript + Tailwind CSS  
-**Estado:** ✅ 100% FUNCIONAL  
+**Estado:** FUNCIONAL  
 
-🎊 **¡PROYECTO COMPLETADO CON ÉXITO!** 🎊
