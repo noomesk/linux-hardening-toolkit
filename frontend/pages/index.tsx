@@ -9,7 +9,7 @@ import LogAnalyzer from '@/components/LogAnalyzer'
 import SecurityChecklist from '@/components/SecurityChecklist'
 import FullReport from '@/components/FullReport'
 
-const API_URL = 'http://localhost:8000'
+const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000'
 
 interface ModuleCardProps {
   title: string
