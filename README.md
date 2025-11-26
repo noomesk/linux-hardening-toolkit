@@ -104,8 +104,8 @@ Acceder a: http://localhost:3000
 ### Backend
 - FastAPI
 - Python 3.x
-- Uvicorn
-- Pydantic
+- Uvicorn 
+- Pydantic 
 
 ### Frontend
 - Next.js 14
