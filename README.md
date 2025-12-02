@@ -150,7 +150,7 @@ cd frontend && npm install
 ```
 ##  Licencia
 
-Este proyecto es de código abierto para fines educativos :3
+Este proyecto es de código abierto para fines educativos
 
 ##  Autor
 
