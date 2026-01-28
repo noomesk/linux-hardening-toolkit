@@ -133,7 +133,7 @@ export default function Home() {
             </h1>
             <p className="text-xl text-neon-blue mb-4">v1.0 - Cybersecurity Automation Suite</p>
             
-            {/* API Status */}
+            {/* API Status revisar */}
             <div className="flex justify-center items-center gap-3">
               <span className="text-gray-400">API Status:</span>
               <div className="flex items-center gap-2">
