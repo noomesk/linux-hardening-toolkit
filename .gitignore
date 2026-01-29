@@ -7,7 +7,7 @@ venv/
 env/
 .venv/
 
-# Node.js / Frontend
+# Node.js / Frontend no olvidar quitar claves!
 node_modules/
 .next/
 .swp/
